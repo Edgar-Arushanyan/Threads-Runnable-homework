@@ -9,9 +9,8 @@ public class Main {
 
 
         Symbol1 symbol1 = new Symbol1("Thread1");
-        Thread newThread = new Thread(symbol1);
-        newThread.start();
-        newThread.join();
+        symbol1.start();
+        symbol1.join();
 
         System.out.println();
 
@@ -19,6 +18,7 @@ public class Main {
         Thread newThread1 = new Thread(symbol2);
         newThread1.start();
         newThread1.join();
+
 
         System.out.println(" end of main");
         /*
